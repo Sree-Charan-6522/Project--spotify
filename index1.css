@@ -1,0 +1,210 @@
+.menubarshort {
+    width: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainbar {
+    width: 92%;
+}
+
+.menubarshort .mylib span {
+    display: none;
+}
+
+.menubarshort .add {
+    display: none;
+}
+
+.menubarshort .showmore {
+    display: none;
+}
+
+.menubarshort .r1 {
+    display: contents;
+}
+
+.menubarshort .r1 .mylib {
+    height: 0;
+    width: 0;
+    display: contents;
+    padding: 0;
+}
+
+.menubarshort .r1 .mylib img {
+    padding: 8px;
+}
+
+.menubarshort .r3 {
+    display: none;
+}
+
+.menubarshort .r2 {
+    display: none;
+}
+
+.menubarshort .r4 {
+    height: 100%;
+}
+
+.menubarshort .r4 .listcon .lists {
+    height: 10%;
+    left: 3%;
+    position: relative;
+    left: 12%;
+}
+
+.menubarshort .r4 .listcon .neF {
+    position: static;
+    justify-content: center;
+}
+
+.menubarshort .r4 .listcon .lists svg {
+    height: 1em;
+}
+
+.menubarshort .r4 .listcon .lists div:last-child {
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+    body {
+        height: 450px;
+        width: 350px;
+        display: grid;
+        align-content: space-around;
+        grid-template-rows: 10% 70% 15%;
+        overflow: auto;
+    }
+
+    header .navbar {
+        width: 100%;
+        grid-template-columns: 20% 40% 40%;
+    }
+
+    header .navbar .logo {
+        display: flex;
+        width: auto;
+    }
+
+    header .navbar .searchbar {
+        display: flex;
+        width: auto;
+    }
+
+    header .navbar .searchbar div {
+        display: none;
+    }
+
+    header .navbar .searchbar .homediv {
+        width: 23%;
+        height: 70%;
+        display: flex;
+    }
+
+    header .navbar .searchbar .mainsearchbar {
+        width: 22%;
+        display: flex;
+    }
+
+    header .navbar .searchbar .mainsearchbar .back {
+        display: none;
+    }
+
+    header .navbar .searchbar .mainsearchbar .searchbtn {
+        display: block;
+    }
+
+    header .navbar .rightside {
+        display: flex;
+        width: auto;
+    }
+
+    header .navbar .rightside div {
+        display: none;
+    }
+
+    header .navbar .rightside .notidiv {
+        display: block;
+    }
+
+    header .navbar .rightside .logdiv {
+        display: block;
+    }
+
+    main {
+        height: 90%;
+        width: auto;
+    }
+
+    main .menubarshort {
+        width: 15%;
+        gap: 0;
+        overflow: auto;
+    }
+
+    main .menubarshort .r4 .listcon {
+        display: grid;
+        overflow-x: hidden;
+    }
+
+    main .menubarshort .r4 .listcon::-webkit-scrollbar {
+        display: none;
+    }
+
+    main .menubarshort .r4 .listcon .lists {
+        height: 4em;
+        position: static;
+    }
+
+    main .mainbar {
+        overflow-x: hidden;
+    }
+
+    main .mainbar .m2 .innerfolder {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-auto-rows: 70%;
+        gap: 0;
+    }
+
+    main .mainbar .m2 .innerfolder .f {
+        height: auto;
+        width: auto;
+
+    }
+
+    .mainbar .m2 .innerfolder .f .thumb img {
+        height: 8em;
+    }
+
+    .mainbar .m2 .innerfolder .f .mainfoldername {
+        padding: 2px;
+        font-size: small;
+        text-align: justify;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mainbar .m2 .innerfolder .f .othername {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0;
+        font-size: x-small;
+    }
+
+    footer {
+        height: 15%;
+    }
+
+    footer .player {
+        display: flex;
+    }
+
+    footer .player .now {
+        display: none;
+    }
+}

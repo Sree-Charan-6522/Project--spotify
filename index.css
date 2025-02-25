@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bMenubarcolor: #1f1f1f;
+    --bMainbarcolor: #1f1f1f;
+    --bBtnbackcolor: #343232;
+
+}
+
+body {
+    height: 99vh;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    overflow: hidden;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* header */
+
+
+
+
+
+header {
+    height: 6%;
+}
+
+.navbar {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.navbar .logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo span {
+    /* background-color: aliceblue; */
+    position: relative;
+    left: 1em;
+}
+
+.navbar .logo img svg {
+    fill: white;
+}
+
+.navbar .searchbar {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 20% 5% 42% 30%;
+}
+
+.navbar .searchbar .homediv {
+    height: 2.5em;
+    background-color: var(--bMenubarcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 4px;
+}
+
+.navbar .searchbar .homebtn {
+    height: 80%;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .searchbar .homebtn img {
+    height: 90%;
+    width: 90%;
+}
+
+.navbar .searchbar .mainsearchbar {
+    height: 2.5em;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 10% 77% 1% 12%;
+    background-color: var(--bMenubarcolor);
+    border-radius: 25px;
+    background-color: #1f1f1f;
+}
+
+.navbar .searchbar .mainsearchbar .back {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .searchbar .mainsearchbar .searchbtn {
+    height: 100%;
+}
+
+.navbar .searchbar .mainsearchbar .searchbtn img {
+    height: 1.5em;
+
+}
+
+.navbar .searchbar .mainsearchbar input {
+    color: gray;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.navbar .searchbar .mainsearchbar span {
+    color: gray;
+    height: 100%;
+    width: 0.2em;
+    font-size: x-large;
+}
+
+.navbar .searchbar .mainsearchbar .brobtn {
+    height: 100%;
+}
+
+.navbar .searchbar .mainsearchbar .brobtn img {
+    height: 1.8em;
+}
+
+
+
+.navbar .rightside {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar .rightside .prediv button {
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 15px;
+}
+
+.navbar .rightside .instaldiv button {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    padding: 0px 5px;
+    background-color: transparent;
+    color: gray;
+    align-items: center;
+    gap: 7px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 300;
+    border: none;
+}
+
+.navbar .rightside .instaldiv img {
+    fill: white;
+    height: 1em;
+}
+
+.navbar .rightside .notidiv {
+    width: 25px;
+}
+
+.navbar .rightside .notidiv button {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .rightside .notidiv img {
+    height: 1.5em;
+}
+
+.navbar .rightside .logdiv button {
+    height: 30px;
+    width: 60px;
+    padding: 0px 5px;
+    border-radius: 30px;
+}
+
+.navbar .rightside .logdiv button:hover {
+    height: 33px;
+    width: 66px;
+}
+
+.navbar .rightside .prediv button:hover {
+    height: 33px;
+}
+
+.navbar .rightside .notidiv img:hover {
+    height: 1.8em;
+}
+
+.navbar .rightside .glow:hover {
+    height: 1.5em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* main */
+
+
+
+
+
+
+
+
+main {
+    height: 84%;
+    display: flex;
+    padding: 5px;
+    gap: 8px;
+}
+
+.btnstyle {
+    background-color: transparent;
+    border: none;
+    color: grey;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.menubar {
+    height: 100%;
+    width: 25%;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 7% 7% 6% auto;
+    background-color: var(--bMenubarcolor);
+    overflow: hidden;
+
+}
+
+.r1 {
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.r1 .mylib {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 52%;
+    padding: 2px 10px;
+    gap: 1em;
+}
+
+.r1 .mylib img {
+    height: 2em;
+}
+
+.r1 .btnstyle:hover {
+    filter: brightness(0) invert(1);
+    transition-duration: 0.7s;
+
+}
+
+.r2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.r2 button {
+    background-color: var(--bBtnbackcolor);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.r3 {
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.r3 .searchbtn {
+    border: none;
+    background-color: transparent;
+}
+
+.r3 .searchimg {
+    height: 1.2em;
+}
+
+.r3 .searchimg:hover {
+    clip-path: circle();
+    background-color: #7171711a;
+    padding: 5px;
+}
+
+.r3 .recent {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    width: 16%;
+}
+
+.r3 .recent img {
+    height: 1.2em;
+}
+
+.r3 .gbtn:hover {
+    filter: brightness(0) invert(1);
+    transition-duration: 0.5s;
+}
+
+.r4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow:scroll; */
+    overflow: hidden;
+}
+
+.r4:hover {
+    overflow-y: scroll;
+}
+
+.r4 .listcon {
+    height: 100%;
+    width: 100%;
+}
+
+.r4 .listcon .lists {
+    height: 12%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.r4 .listcon .lists:hover {
+    background-color: #ffffff23;
+}
+
+.r4 .listcon .neF .img {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    position: relative;
+}
+
+.r4 .listcon .neF .img svg {
+    height: 2em;
+    position: absolute;
+    background-color: #343232;
+    padding: 12px;
+
+    border-radius: 7px;
+}
+
+.r4 .listcon .lists .imgs {
+    width: 15%;
+    justify-content: center;
+    position: relative;
+}
+
+.r4 .listcon .lists img {
+    height: 3.4em;
+    position: absolute;
+    left: 12%;
+    clip-path: circle();
+}
+
+.r4 .listcon .lists div {
+    width: 20%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 60% 40%;
+    font-family: sans-serif;
+
+}
+
+.r4 .listcon .lists div .s1 {
+    width: fit-content;
+    padding: 4px 9px;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.r4 .listcon .lists div .s2 {
+    width: fit-content;
+    padding: 4px 9px;
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--bMenubarcolor);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, .3);
+    ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(204, 204, 204);
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainbar {
+    height: 100%;
+    width: 80%;
+    border-radius: 8px;
+    display: grid;
+    padding: 0px 2%;
+    grid-template-rows: 10% auto;
+    background: var(--bMainbarcolor);
+}
+
+.mainbar button {
+    background-color: transparent;
+    border: none;
+}
+
+.mainbar .m1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.mainbar .m1 .mainbtns {
+    height: max-content;
+    padding: 6px 10px;
+    background-color: rgba(221, 216, 216, 0.125);
+    border-radius: 36px;
+    color: white;
+}
+
+.mainbar .m1 .allbtn {
+    background-color: white;
+    color: black;
+}
+
+.mainbar .m2 {
+    display: flex;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.mainbar .m2 .innerfolder {
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+
+}
+
+.mainbar .m2 .innerfolder::-webkit-scrollbar {
+    display: none;
+}
+
+
+.mainbar .m2 .innerfolder .f {
+    display: grid;
+    height: 40%;
+    width: 13%;
+    grid-template-rows: 70% 15% 15%;
+    padding: 4px;
+}
+
+.mainbar .m2 .innerfolder .f .thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainbar .m2 .innerfolder .f .thumb img {
+    position: absolute;
+    height: 12em;
+    border-radius: 6px;
+    /* z-index: -1; */
+    background-size: contain;
+    background-position: center center;
+}
+
+.mainbar .m2 .innerfolder .f .thumb .playbtn {
+    height: 20px;
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    background-color: #1ed760;
+    padding: 10px;
+    clip-path: circle();
+    opacity: 0;
+    transform: translate(0%, 20%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mainbar .m2 .innerfolder .f .thumb:hover .playbtn {
+    opacity: 1;
+    transform: translate(0%, -7%);
+}
+
+.mainbar .m2 .innerfolder .f .mainfoldername {
+    color: white;
+    padding: 6px;
+    font-size: larger;
+    text-align: justify;
+}
+
+.mainbar .m2 .innerfolder .f .othername {
+    font-size: small;
+    color: grey;
+    padding: 6px;
+    text-align: justify;
+}
+
+.mainbar .m2 button:hover {
+    text-decoration: underline white;
+}
+
+
+
+
+
+/* footer */
+
+
+
+
+
+
+footer {
+    height: 10%;
+}
+
+.player {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+}
+
+.player .remote .remotebtns {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player .remote .remotebtns img {
+    height: 25px;
+    fill: grey;
+    background-color: transparent;
+}
+
+.player .remote .remotebtns button {
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+    transition-duration: 0.25s;
+}
+
+.player .remote .remotebtns button:hover {
+    filter: brightness(100);
+}
+
+.player .remote .remotebtns .playbtn {
+    background-color: #ffffff;
+    padding: 12px;
+    padding-right: 6px;
+    clip-path: circle();
+}
+
+.player .remote .seekSliderdiv {
+    height: 28%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .remote .seekSliderdiv #seekSlider {
+    width: 500px;
+}
+
+input[type='range'] {
+    height: 3px;
+    background-color: #4d4d4d;
+    accent-color: white;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    color: #fc1e1e5c;
+    margin-top: -1px;
+
+}
+
+input[type='range']::-webkit-slider-runnable-track:hover {
+    cursor: pointer;
+}

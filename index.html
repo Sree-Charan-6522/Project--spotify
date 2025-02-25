@@ -1,0 +1,162 @@
+<!-- this project starten on Feb 08 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<!-- xmlns="http://www.w3.org/2000/svg" use this in ur svg tag which allows ur img preview in web -->
+
+<!-- https://i.ytimg.com/vi/vZMgwjtBfL0/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCCVai5wsfNSJ6VbwSjqbbk_dQZQA -->
+
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                <span>
+                    <img src="imgs/logo.svg" alt="">
+                </span>
+            </div>
+
+            <div class="searchbar">
+                <div></div>
+                <div class="homediv">
+                    <button class="homebtn"><img src="imgs/home.svg" alt=""></button>
+                </div>
+
+
+                <div class="mainsearchbar">
+                    <button class="searchbtn back"><img src="imgs/scearch.svg" alt=""></button>
+                    <input class=" back" type="text" placeholder="What do you want to play?">
+                    <span class=" back">|</span>
+                    <button class="brobtn back"><img src="imgs/browse.svg" alt=""></button>
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="rightside">
+                <div></div>
+                <div class="prediv"><button>Explore Premium</button></div>
+                <div class="instaldiv"><button class="glow"><img src="imgs/installapp.svg" alt=""> Install App</button>
+                </div>
+                <div class="notidiv"><button class="glow"><img src="imgs/notification.svg" alt=""></button></div>
+                <div class="logdiv"><button> Log in</button></div>
+                <div></div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="menubar">
+            <div class="r1">
+                <button onclick="lib()" class=" mylib btnstyle">
+                    <img src="imgs/lib.svg" alt="" class="lib">
+                    <span>your Library</span>
+                </button>
+                <button class="add btnstyle"><span>+</span></button>
+                <button class="showmore btnstyle"><span>-></span></button>
+            </div>
+            <div class="r2">
+                <button>Playlists</button>
+                <button>Artists</button>
+            </div>
+            <div class="r3">
+                <button class="searchbtn gbtn">
+                    <img class="searchimg" src="imgs/scearch.svg" alt="">
+                </button>
+                <button class="recent gbtn">
+                    <span>Recent</span>
+                    <img src="imgs/recent.svg" alt="">
+                </button>
+
+            </div>
+            <div class="r4">
+                <div class="listcon">
+                    <button class="neF lists">
+                        <div class="img">
+                            <svg fill="grey" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img"
+                                aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" data-testid="folder"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M1 4a2 2 0 0 1 2-2h5.155a3 3 0 0 1 2.598 1.5l.866 1.5H21a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7.155 0H3v16h18V7H10.464L9.021 4.5a1 1 0 0 0-.866-.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="s1">New Folder</span>
+                            <span class="s2">0 playlists</span>
+                        </div>
+                    </button>
+                        <!-- <button onclick="main(0)" class="lists">
+                            <div class="imgs">
+                                <img src="https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9" alt="">
+                            </div>
+                            <div>
+                                <span class="s1">dfsdfsadfsdfsadf</span>
+                                <span class="s2">dfsdfsadfsdfsadf</span>
+                            </div>
+                        </button> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="mainbar">
+            <div class="m1">
+                <button class="mainbtns allbtn"> All </button>
+                <button class="mainbtns"> Music</button>
+                <button class="mainbtns"> Podcasts </button>
+            </div>
+            <div class="m2">
+                <div class="innerfolder">
+                    <!-- <button onclick="main(0)" class="f">
+                        <span id="f0" class="thumb">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02b889b365c25bfa01f9772a1e" alt="">
+    
+                            <img class="playbtn" src="imgs/play.svg" alt="">
+                        </span>
+                        <span class="mainfoldername">sanam tere kasam</span>
+                        <span class="othername">lsdfd dsjsdf asdf sadfsd</span>
+                    </button> -->
+                </div>
+                
+                
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="player">
+            <div class="now">
+                <audio id="bga" src=""  autoplay=""></audio>
+            </div>
+            <div class="remote">
+                <div class="remotebtns">
+                    <button onclick="shuf()"><img fill="white" src="remote/shuffel.svg" alt=""></button>
+                    <button onclick="pervNxt(1)"><img src="remote/perv.svg" alt=""></button>
+                    <button onclick="playPause()" class="playbtn"><img src="remote/play.svg" alt=""></button>
+                    <button onclick="pervNxt(2)"><img src="remote/next.svg" alt=""></button>
+                    <button class="loop" onclick="loop()"><img src="remote/repeat.svg" alt=""></button>
+                </div>
+                <div class="seekSliderdiv">
+                    <input type="range" id="seekSlider" min="0" max="100" value="0">
+                </div>
+            </div>
+            <div class="other"></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- COMPLETED ON - 23 feb 2025 -->
